@@ -1,0 +1,51 @@
+<html>
+
+  <head>
+    <script type="text/javascript" src="https://cdn.goinstant.net/v1/platform.min.js"></script>
+    <script src="build/build.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      var widgetIndicators;
+      $(document).ready(function() {
+        var el = document.createElement('div');
+        document.body.appendChild(el);
+
+        var options = {
+          widgetElement: $('#widget')[0],
+          blinkElement: $('.test')[0]
+        };
+
+        var WidgetIndicators = require('widget-indicators');
+        widgetIndicators = new WidgetIndicators(options);
+
+        $('#b').on('click', function() {
+          window.setTimeout(function() {
+            widgetIndicators.trigger('NEW MESSAGE');
+            console.log('trigger');
+          }, parseInt($('#t').val(), 10));
+        });
+      });
+    </script>
+    <style>
+      .test {
+        background-color: #ccc;
+        width: 200px;
+        height: 200px;
+      }
+
+      .test.gi-widget-blink {
+        background-color: #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    This is a test
+    <button id="b">Trigger</button> in <input type="text" id="t" value ="3000" />
+
+    <br>
+    <div class="test">
+      <input type="text" id="widget" />
+    </div>
+  </body>
+</html>
