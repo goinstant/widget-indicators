@@ -10,7 +10,9 @@
   ],
 
   "dependencies": {
-    "lodash/lodash": "2.3.0"
+    "lodash/lodash": "2.3.0",
+    "stagas/binder": "0.0.1",
+    "component/classes": "1.1.4"
   },
 
   "development": {
@@ -24,10 +26,7 @@
 
   "scripts": [
     "index.js",
+    "lib/errors.js",
     "lib/widget_indicators.js"
-  ],
-
-  "styles": [
-    "widget_indicators.css"
   ]
 }
