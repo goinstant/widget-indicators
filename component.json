@@ -28,5 +28,10 @@
     "index.js",
     "lib/errors.js",
     "lib/widget_indicators.js"
+  ],
+
+  "files": [
+    "sounds/gi-widget-pop.mp3",
+    "sounds/gi-widget-pop.ogg"
   ]
 }
