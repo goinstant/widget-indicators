@@ -1,0 +1,37 @@
+{
+  "name": "widget-indicators",
+  "repo": "goinstant/widget-indicators",
+  "description": "Indicators when some action is performed on an unfocused widget.",
+  "version": "1.0.0",
+  "keywords": [
+    "GoInstant",
+    "widget",
+    "widget-indicators"
+  ],
+
+  "dependencies": {
+    "lodash/lodash": "2.3.0",
+    "stagas/binder": "0.0.1",
+    "component/classes": "1.1.4"
+  },
+
+  "development": {
+    "visionmedia/mocha": "*",
+    "component/jquery": "*"
+  },
+
+  "license": "BSD",
+
+  "main": "index.js",
+
+  "scripts": [
+    "index.js",
+    "lib/errors.js",
+    "lib/widget_indicators.js"
+  ],
+
+  "files": [
+    "sounds/gi-widget-pop.mp3",
+    "sounds/gi-widget-pop.ogg"
+  ]
+}
